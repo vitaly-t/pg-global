@@ -1,6 +1,6 @@
 {
   "name": "pg-global",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Persistent global PostgreSQL connection",
   "main": "lib/index.js",
   "scripts": {
