@@ -8,4 +8,4 @@ Persistent global database connection, based on [pg-promise] v.6.3.0.
 
 ### This is an experimental project, not ready for usage yet.
 
-
+[pg-promise]:https://github.com/vitaly-t/pg-promise
