@@ -1,0 +1,46 @@
+{
+  "name": "pg-global",
+  "version": "0.0.1",
+  "description": "Persistent global PostgreSQL connection",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jasmine-node test",
+    "coverage": "istanbul cover ./node_modules/jasmine-node/bin/jasmine-node test",
+    "travis": "npm run lint && istanbul cover ./node_modules/jasmine-node/bin/jasmine-node test --captureExceptions && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "lint": "./node_modules/.bin/eslint ./lib ./test"
+  },
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/vitaly-t/pg-global",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vitaly-t/pg-global.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vitaly-t/pg-global/issues",
+    "email": "vitaly.tomilov@gmail.com"
+  },
+  "keywords": [
+    "PostgreSQL",
+    "persistent",
+    "connection"
+  ],
+  "author": {
+    "name": "Vitaly Tomilov",
+    "email": "vitaly.tomilov@gmail.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=4.0",
+    "npm": ">=2.15"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "coveralls": "2.11",
+    "eslint": "^4.1.1",
+    "istanbul": "0.4",
+    "jasmine-node": "1.14"
+  }
+}
